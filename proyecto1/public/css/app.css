@@ -1,0 +1,165 @@
+body{
+    background-color: white;
+    height: 100%;
+    width: auto;
+}
+i{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px
+}
+.offcanvas{
+    background-color: whitesmoke;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.offcanvas-title{
+    padding-left: 14px;
+}
+.card{
+    
+    background-color: whitesmoke;
+}
+/*.offcanvas .container {
+overflow-x: hidden;
+overflow-y: scroll;
+}*/
+
+.sidebar li .submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow-x:hidden; 
+    overflow-y:auto;
+    max-height:20rem;
+}
+
+.sidebar li .submenu2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
+}
+
+.sidebar .nav-link2 {
+    font-weight: 500;
+    padding: 15px;
+    color: var(--bs-dark);
+    display: flex;
+}
+
+.nav-link2 {
+    text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--bs-red);
+}
+
+.sidebar .nav-link2:hover {
+    color: var(--bs-red);
+}
+
+.container_claro {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.footer-inicio {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    height: 2.5rem;
+    background-color:black;
+}
+.logo_claro{
+    height: 3rem;
+    width: 3rem;
+}
+.footer-inicio p{
+    padding: 0;
+}
+
+.container_main{
+    height: 100vh;
+    position:inherit ;
+    padding-bottom: 3rem;
+}
+/*Para agregar contenido y que se vea debajo del iframe debemos crear un div.container con las especificaciones de 
+container_main o ponerle esta misma clase*/
+
+.box{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    margin-bottom: 10px;
+    position: fixed;
+    z-index: 1;
+}
+.busqueda{
+    padding-left: 1rem;
+}
+.buscar{
+    border-radius: 5px;
+
+}
+.nav-footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem 2rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-footer a{
+    color: black;
+}
+.nav-footer a:hover {
+    color: var(--bs-red);
+}
+.btn-logout{
+    border-radius: 5px;
+    border-color: gray;
+    
+}
+.nbre-usuario{
+    display: flex;
+    align-items: center;
+}
+.nbre-usuario i{
+    padding-bottom: 3px;
+}
+@media (max-width: 1300px) {
+    .sidebar li .submenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        overflow-x:hidden; 
+        overflow-y:auto;
+        max-height:10rem;
+    }
+}

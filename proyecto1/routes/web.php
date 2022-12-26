@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\pruebaController;
+use App\Http\Controllers\PruebaController;
+use App\Http\Controllers\InicioController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,4 +18,10 @@ use App\Http\Controllers\pruebaController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/pruebaBase', [pruebaController::class, 'prueba']);
+
+Route::get('/inicio', function () {
+    return view('Bienvenido');
+});
+Route::get('/index', function () {
+    return view('full_width');
+});
