@@ -194,6 +194,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+ 	//Clase para OCI8 --conexion a ORACLE	
+	Yajra\Oci8\Oci8ServiceProvider::class,
 
     ],
 
